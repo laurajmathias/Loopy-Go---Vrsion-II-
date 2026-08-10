@@ -201,18 +201,8 @@ a {
 
     overflow: hidden;
 
-    /*
-        ==================================
-        IMAGEM DE FUNDO
-        ==================================
+    background-image: url(assets/fundo-loopy.png);
 
-        QUANDO TIVER SUA IMAGEM:
-
-        background-image: url("img/mercado.png");
-
-        Por enquanto deixamos apenas
-        uma cor de fundo.
-    */
 
     background-color: #062653;
 
