@@ -578,6 +578,19 @@ a {
     .hero p {
         font-size: 25px;
     }
+
+    .services {
+    padding: 90px 35px;
+}
+
+.services-grid {
+    grid-template-columns:
+        repeat(3, 1fr);
+}
+
+.service-card {
+    min-height: 340px;
+}
 }
 
 
@@ -773,6 +786,21 @@ a {
     .hero p {
         font-size: 23px;
     }
+
+    .services {
+    padding: 80px 30px;
+}
+
+.services-grid {
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.service-card {
+    min-height: 320px;
+}
 }
 
 
