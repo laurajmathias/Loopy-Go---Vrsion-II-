@@ -505,8 +505,10 @@ a {
 
 
 .services-header h2 span{ 
+ color: var(--orange);
+}
 
-service-card{
+.service-card{
 
     position: relative;
     min-height: 365px;
@@ -514,7 +516,7 @@ service-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+}
 .services-header p{
 
     text-align: center;
