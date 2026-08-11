@@ -607,6 +607,15 @@ a {
         opacity 0.5s ease;
 }
 
+
+.service-card.visible {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+}
+ 
+
 /* ========================================
    TABLET
 ======================================== */
