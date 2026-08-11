@@ -104,7 +104,6 @@ a {
     opacity: 0.3;
 }
 
-
 .nav {
 
     position: absolute;
@@ -136,13 +135,8 @@ a {
 }
 
 
-/* ========================================
-   BOTÃO SOLICITAR PROPOSTA
-======================================== */
-
 .btn-proposta {
-
-    min-width: 335px;
+ min-width: 335px;
     height: 48px;
 
     padding: 0 30px;
@@ -163,7 +157,8 @@ a {
     font-weight: 700;
 
     transition: 0.3s ease;
-}
+
+    margin-left: auto;
 
 
 .btn-proposta:hover {
