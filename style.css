@@ -614,6 +614,25 @@ a {
     transform:
         translateY(0);
 }
+
+.service-card:hover {
+    transform:
+        translateY(-10px);
+
+    border-color:
+        rgba(47, 86, 216, 0.55);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.28),
+        0 0 25px rgba(47, 86, 216, 0.08);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(37, 62, 108, 0.8),
+            rgba(10, 29, 52, 0.9)
+        );
+}
  
 
 /* ========================================
