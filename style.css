@@ -180,7 +180,6 @@ a {
 
     overflow: hidden;
 
-    background-image: url(assets/fundo-loopy.png);
 
 
     background-color: #062653;
@@ -190,6 +189,23 @@ a {
     background-repeat: no-repeat;
 }
 
+
+.hero-background {
+    position: absolute;
+    inset: -30px;
+
+    background-image: url("assets/fundo-loopy.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+    transform: scale(1.03);
+
+    animation: zoomMercado 15s ease-in-out infinite alternate;
+}
 
 /* ========================================
    OVERLAY DA IMAGEM
