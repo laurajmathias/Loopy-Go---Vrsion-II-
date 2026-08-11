@@ -29,7 +29,6 @@ a {
 ======================================== */
 
 :root {
-
     --navy: #06101A;
     --blue: #2F56D8;
     --orange: #E35D24;
@@ -46,7 +45,6 @@ a {
 ======================================== */
 
 .header {
-
     width: 100%;
     height: var(--header-height);
 
@@ -56,28 +54,25 @@ a {
     z-index: 10;
 }
 
-
 .header-container {
-
-     width: 100%;
+    width: 100%;
     height: 100%;
 
     margin: 0 auto;
-
     padding: 0 48px;
 
     display: flex;
     align-items: center;
 
     position: relative;
-
 }
+
+
 /* ========================================
    LOGO
 ======================================== */
 
 .logo {
-
     width: 270px;
     height: 70px;
 
@@ -87,37 +82,31 @@ a {
     flex-shrink: 0;
 }
 
-
 .logo img {
     width: 100%;
     height: auto;
+
     display: block;
 }
 
-.logo span {
 
-    color: #ffffff;
-
-    font-size: 24px;
-    font-weight: 700;
-
-    opacity: 0.3;
-}
+/* ========================================
+   MENU
+======================================== */
 
 .nav {
-
     position: absolute;
+
     left: 50%;
     transform: translateX(-50%);
+
     display: flex;
     align-items: center;
-    gap: 55px;
 
+    gap: 55px;
 }
 
-
 .nav-link {
-
     color: #ffffff;
 
     font-size: 21px;
@@ -128,18 +117,22 @@ a {
     white-space: nowrap;
 }
 
-
 .nav-link:hover {
-
     color: var(--orange);
 }
 
 
+/* ========================================
+   BOTÃO SOLICITAR PROPOSTA
+======================================== */
+
 .btn-proposta {
- min-width: 335px;
+    min-width: 335px;
     height: 48px;
 
     padding: 0 30px;
+
+    margin-left: auto;
 
     border-radius: 9px;
 
@@ -148,7 +141,7 @@ a {
         #D85B2C,
         #5D210F
     );
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,20 +150,21 @@ a {
     font-weight: 700;
 
     transition: 0.3s ease;
-
-    margin-left: auto;
-} 
+}
 
 .btn-proposta:hover {
-
     transform: translateY(-2px);
 
     box-shadow:
         0 8px 25px rgba(227, 93, 36, 0.25);
 }
 
-.hero {
 
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
     min-height: calc(100vh - var(--header-height));
 
     position: relative;
@@ -180,18 +174,17 @@ a {
 
     overflow: hidden;
 
-
-
     background-color: #062653;
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 
+/* ========================================
+   IMAGEM DE FUNDO
+======================================== */
+
 .hero-background {
     position: absolute;
+
     inset: -30px;
 
     background-image: url("assets/fundo-loopy.png");
@@ -204,9 +197,16 @@ a {
 
     transform: scale(1.03);
 
-    animation: zoomMercado 15s ease-in-out infinite alternate;
+    animation:
+        zoomMercado 15s ease-in-out infinite alternate;
 }
-keyframes zoomMercado {
+
+
+/* ========================================
+   ANIMAÇÃO DE ZOOM DA IMAGEM
+======================================== */
+
+@keyframes zoomMercado {
 
     from {
         transform: scale(1.03);
@@ -223,6 +223,24 @@ keyframes zoomMercado {
    OVERLAY DA IMAGEM
 ======================================== */
 
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 27, 60, 0.96) 0%,
+            rgba(3, 31, 69, 0.85) 35%,
+            rgba(3, 31, 69, 0.35) 70%,
+            rgba(3, 31, 69, 0.15) 100%
+        );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
 
 
 /* ========================================
@@ -230,8 +248,7 @@ keyframes zoomMercado {
 ======================================== */
 
 .hero-container {
-
-     width: 100%;
+    width: 100%;
 
     margin: 0 auto;
 
@@ -243,15 +260,42 @@ keyframes zoomMercado {
 }
 
 .hero-content {
-
     max-width: 650px;
+
+    animation:
+        heroContent 1s ease-out forwards;
 }
 
 
+/* ========================================
+   ANIMAÇÃO DO CONTEÚDO
+======================================== */
 
-.hero h1 { 
+@keyframes heroContent {
 
-      font-size: clamp(48px, 4.3vw, 68px);
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.hero h1 {
+    font-size: clamp(48px, 4.3vw, 68px);
 
     line-height: 1.15;
 
@@ -260,13 +304,9 @@ keyframes zoomMercado {
     letter-spacing: -1.5px;
 
     margin-bottom: 32px;
-
- }
-
-  
+}
 
 .hero h1 span {
-
     color: var(--orange);
 }
 
@@ -276,7 +316,6 @@ keyframes zoomMercado {
 ======================================== */
 
 .hero p {
-
     max-width: 620px;
 
     font-size: 29px;
@@ -296,7 +335,6 @@ keyframes zoomMercado {
 ======================================== */
 
 .hero-buttons {
-
     display: flex;
     align-items: center;
 
@@ -309,10 +347,9 @@ keyframes zoomMercado {
 ======================================== */
 
 .btn-primary {
-
     height: 58px;
 
-    padding: 0 14px 0 14px;
+    padding: 0 14px;
 
     min-width: 225px;
 
@@ -336,18 +373,14 @@ keyframes zoomMercado {
     transition: 0.3s ease;
 }
 
-
 .btn-primary:hover {
-
     transform: translateY(-2px);
 
     box-shadow:
         0 8px 25px rgba(227, 93, 36, 0.3);
 }
 
-
 .arrow {
-
     font-size: 27px;
 
     line-height: 1;
@@ -359,7 +392,6 @@ keyframes zoomMercado {
 ======================================== */
 
 .btn-download {
-
     height: 58px;
 
     min-width: 255px;
@@ -372,7 +404,8 @@ keyframes zoomMercado {
 
     color: #102946;
 
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border:
+        1px solid rgba(255, 255, 255, 0.4);
 
     display: flex;
     align-items: center;
@@ -386,17 +419,13 @@ keyframes zoomMercado {
     transition: 0.3s ease;
 }
 
-
 .btn-download:hover {
-
     background-color: #ffffff;
 
     transform: translateY(-2px);
 }
 
-
 .download-icon {
-
     font-size: 29px;
 
     font-weight: 700;
@@ -410,7 +439,6 @@ keyframes zoomMercado {
 ======================================== */
 
 .placeholder-section {
-
     min-height: 500px;
 
     padding: 100px 10%;
@@ -422,97 +450,76 @@ keyframes zoomMercado {
     justify-content: center;
 }
 
-
 .placeholder-section:nth-child(even) {
-
     background-color: #0A1B2A;
 }
 
-
 .placeholder-section h2 {
-
     font-size: 40px;
 }
 
 
 /* ========================================
-   RESPONSIVIDADE
+   TABLET / TELAS MÉDIAS
 ======================================== */
 
 @media (max-width: 1200px) {
 
     .header-container {
-
         padding: 0 30px;
     }
 
     .nav {
-
         gap: 30px;
-
-        margin-right: 30px;
     }
 
     .nav-link {
-
         font-size: 18px;
     }
 
     .btn-proposta {
-
         min-width: 220px;
 
         font-size: 17px;
     }
 
     .hero-container {
-
         padding-left: 60px;
     }
 
     .hero p {
-
-   font-size: 25px;
+        font-size: 25px;
     }
 }
 
+
+/* ========================================
+   TABLET
+======================================== */
+
 @media (max-width: 900px) {
 
+    :root {
+        --header-height: 90px;
+    }
+
     .header {
-
-        height: 90px;
-           position:fixed;
-
-    top:0;
-
-    width:100%;
-
-    z-index:999;
-
-    background:rgba(255,255,255,.92);
-
-    backdrop-filter:blur(15px);
-
-    border-bottom:1px solid var(--border);
+        height: var(--header-height);
     }
 
     .header-container {
-
         padding: 0 25px;
     }
 
     .logo {
-
         width: 180px;
     }
 
     .nav {
-
         display: none;
     }
 
     .btn-proposta {
-
         min-width: 190px;
 
         height: 45px;
@@ -521,88 +528,51 @@ keyframes zoomMercado {
     }
 
     .hero {
-
-        min-height: calc(100vh - 90px);
+        min-height:
+            calc(100vh - var(--header-height));
     }
-
-    .hero-background {
-    position: absolute;
-    inset: -30px;
-
-    background-image: url("img/mercado.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    z-index: 0;
-
-    transform: scale(1.03);
-
-    animation: zoomMercado 15s ease-in-out infinite alternate;
-}
-
-@keyframes zoomMercado {
-
-    from {
-        transform: scale(1.03);
-    }
-
-    to {
-        transform: scale(1.08);
-    }
-
-}
 
     .hero-container {
-
         padding: 70px 40px;
     }
 
     .hero-content {
-
         max-width: 600px;
-        animation: heroContent 1s ease-out forwards
-
-        
-
-        
     }
 
-    
-
     .hero h1 {
-
         font-size: 52px;
     }
 
     .hero p {
-
         font-size: 23px;
     }
 }
 
 
+/* ========================================
+   CELULAR
+======================================== */
 
 @media (max-width: 600px) {
 
-    .header {
+    :root {
+        --header-height: 75px;
+    }
 
-        height: 75px;
+    .header {
+        height: var(--header-height);
     }
 
     .header-container {
-
         padding: 0 20px;
     }
 
     .logo {
-
-        width: 20px;
+        width: 130px;
     }
 
     .btn-proposta {
-
         min-width: auto;
 
         height: 40px;
@@ -613,22 +583,19 @@ keyframes zoomMercado {
     }
 
     .hero {
-
-        min-height: calc(100vh - 75px);
+        min-height:
+            calc(100vh - var(--header-height));
     }
 
     .hero-container {
-
         padding: 60px 25px;
     }
 
     .hero-content {
-
         max-width: 100%;
     }
 
     .hero h1 {
-
         font-size: 40px;
 
         line-height: 1.12;
@@ -637,7 +604,6 @@ keyframes zoomMercado {
     }
 
     .hero p {
-
         font-size: 19px;
 
         line-height: 1.5;
@@ -646,7 +612,6 @@ keyframes zoomMercado {
     }
 
     .hero-buttons {
-
         flex-direction: column;
 
         align-items: stretch;
@@ -656,9 +621,9 @@ keyframes zoomMercado {
 
     .btn-primary,
     .btn-download {
-
         width: 100%;
 
         min-width: 0;
     }
+
 }
