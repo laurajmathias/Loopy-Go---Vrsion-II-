@@ -583,7 +583,7 @@ a {
     padding: 90px 35px;
 }
 
-.services-grid {
+.service-grid {
     grid-template-columns:
         repeat(3, 1fr);
 }
