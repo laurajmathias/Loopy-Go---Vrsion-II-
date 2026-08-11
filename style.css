@@ -216,31 +216,6 @@ a {
    OVERLAY DA IMAGEM
 ======================================== */
 
-.hero-overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    /*
-        Esse overlay ficará por cima
-        da imagem de fundo.
-
-        Ele cria o tom azul escuro
-        presente no seu mockup.
-    */
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(3, 27, 60, 0.96) 0%,
-            rgba(3, 31, 69, 0.85) 35%,
-            rgba(3, 31, 69, 0.35) 70%,
-            rgba(3, 31, 69, 0.15) 100%
-        );
-
-    z-index: 1;
-}
 
 
 /* ========================================
