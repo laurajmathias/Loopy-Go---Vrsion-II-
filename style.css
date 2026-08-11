@@ -464,14 +464,9 @@ a {
 
     .hero p {
 
-        font-size: 25px;
+   font-size: 25px;
     }
 }
-
-
-/* ========================================
-   TABLET
-======================================== */
 
 @media (max-width: 900px) {
 
@@ -522,6 +517,35 @@ a {
         min-height: calc(100vh - 90px);
     }
 
+    .hero-background {
+    position: absolute;
+    inset: -30px;
+
+    background-image: url("img/mercado.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+    transform: scale(1.03);
+
+    animation: zoomMercado 15s ease-in-out infinite alternate;
+}
+
+@keyframes zoomMercado {
+
+    from {
+        transform: scale(1.03);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}
+
     .hero-container {
 
         padding: 70px 40px;
@@ -530,7 +554,14 @@ a {
     .hero-content {
 
         max-width: 600px;
+        animation: heroContent 1s ease-out forwards
+
+        
+
+        
     }
+
+    
 
     .hero h1 {
 
