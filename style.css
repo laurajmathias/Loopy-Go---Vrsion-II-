@@ -59,18 +59,13 @@ a {
 
 .header-container {
 
-     width: 100%;
-    height: 100%;
-
-    margin: 0 auto;
-
-    padding: 0 48px;
+     width: 270px;
+    height: 70px;
 
     display: flex;
     align-items: center;
 
-    position: relative;
-
+    flex-shrink: 0;
 }
 /* ========================================
    LOGO
