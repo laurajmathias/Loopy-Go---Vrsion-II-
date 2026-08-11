@@ -223,22 +223,16 @@ a {
 
 .hero-container {
 
-    width: 100%;
-    max-width: 1440px;
+     width: 100%;
 
     margin: 0 auto;
 
-    padding: 80px 84px;
+    padding: 80px 85px;
 
     position: relative;
 
     z-index: 2;
 }
-
-
-/* ========================================
-   CONTEÚDO DO HERO
-======================================== */
 
 .hero-content {
 
@@ -246,9 +240,6 @@ a {
 }
 
 
-/* ========================================
-   TÍTULO
-======================================== */
 
 .hero h1 {
 
@@ -261,7 +252,6 @@ a {
     letter-spacing: -1.5px;
 
     margin-bottom: 32px;
-}
 
 
 .hero h1 span {
