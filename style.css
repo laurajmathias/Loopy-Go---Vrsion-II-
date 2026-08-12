@@ -2114,6 +2114,571 @@ a {
 }
 
 /* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+
+    position: relative;
+
+    background: #020910;
+
+    border-top: 1px solid rgba(104, 137, 198, 0.12);
+
+    overflow: hidden;
+
+}
+
+
+/* ========================================
+   EFEITO DECORATIVO
+======================================== */
+
+.footer::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -380px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(47, 86, 216, 0.08);
+
+    pointer-events: none;
+
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.footer-container {
+
+    width: 100%;
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    padding: 75px 60px 25px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ========================================
+   PARTE PRINCIPAL
+======================================== */
+
+.footer-main {
+
+    display: grid;
+
+    grid-template-columns:
+        1.7fr
+        0.8fr
+        1fr
+        1.2fr;
+
+    gap: 70px;
+
+}
+
+
+/* ========================================
+   MARCA
+======================================== */
+
+.footer-brand {
+
+    max-width: 330px;
+
+}
+
+
+.footer-logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+}
+
+
+.footer-logo img {
+
+    width: 220px;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+.footer-brand p {
+
+    margin: 0;
+
+    color: rgba(245, 247, 250, 0.52);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    max-width: 310px;
+
+}
+
+
+/* ========================================
+   REDES SOCIAIS
+======================================== */
+
+.footer-social {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+}
+
+
+.social-link {
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: rgba(47, 86, 216, 0.08);
+
+    border: 1px solid rgba(47, 86, 216, 0.15);
+
+    color: rgba(255, 255, 255, 0.65);
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.social-link svg {
+
+    width: 19px;
+    height: 19px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+.social-link:hover {
+
+    transform: translateY(-3px);
+
+    background: rgba(47, 86, 216, 0.18);
+
+    border-color: rgba(47, 86, 216, 0.45);
+
+    color: #ffffff;
+
+}
+
+
+/* ========================================
+   COLUNAS
+======================================== */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+}
+
+
+.footer-column h3 {
+
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+}
+
+
+.footer-column a,
+.footer-column span {
+
+    color: rgba(245, 247, 250, 0.50);
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.footer-column a:hover {
+
+    color: var(--orange);
+
+    transform: translateX(3px);
+
+}
+
+
+/* ========================================
+   CTA
+======================================== */
+
+.footer-cta {
+
+    padding-left: 25px;
+
+    border-left: 1px solid rgba(104, 137, 198, 0.12);
+
+}
+
+
+.footer-cta > span {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--orange);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.footer-cta h3 {
+
+    max-width: 230px;
+
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    line-height: 1.35;
+
+}
+
+
+/* ========================================
+   BOTÃO DO FOOTER
+======================================== */
+
+.footer-button {
+
+    min-width: 190px;
+
+    height: 46px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #E45E27,
+            #772B13
+        );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.footer-button span {
+
+    font-size: 20px;
+
+    line-height: 1;
+
+}
+
+
+.footer-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(227, 93, 36, 0.22);
+
+}
+
+
+/* ========================================
+   DIVISOR
+======================================== */
+
+.footer-divider {
+
+    width: 100%;
+
+    height: 1px;
+
+    margin: 55px 0 22px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(104, 137, 198, 0.18),
+            transparent
+        );
+
+}
+
+
+/* ========================================
+   PARTE INFERIOR
+======================================== */
+
+.footer-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: rgba(245, 247, 250, 0.35);
+
+    font-size: 12px;
+
+}
+
+
+.footer-bottom-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.footer-bottom-links a {
+
+    color: rgba(245, 247, 250, 0.35);
+
+    font-size: 12px;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.footer-bottom-links a:hover {
+
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/* ========================================
+   FOOTER — TABLET
+======================================== */
+
+@media (max-width: 1050px) {
+
+    .footer-main {
+
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr;
+
+        gap: 45px;
+
+    }
+
+
+    .footer-cta {
+
+        grid-column: 1 / -1;
+
+        padding: 30px 0 0;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(104, 137, 198, 0.12);
+
+    }
+
+
+    .footer-cta h3 {
+
+        max-width: 400px;
+
+    }
+
+}
+
+
+/* ========================================
+   FOOTER — MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .footer-container {
+
+        padding: 60px 25px 25px;
+
+    }
+
+
+    .footer-main {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .footer-brand {
+
+        max-width: 100%;
+
+    }
+
+
+    .footer-logo img {
+
+        width: 190px;
+
+    }
+
+
+    .footer-column {
+
+        gap: 11px;
+
+    }
+
+
+    .footer-cta {
+
+        padding-top: 35px;
+
+    }
+
+
+    .footer-cta h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+    .footer-bottom-links {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+    }
+
+}
+
+/* ========================================
    TABLET / TELAS MÉDIAS
 ======================================== */
 
