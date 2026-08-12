@@ -223,24 +223,7 @@ a {
    OVERLAY DA IMAGEM
 ======================================== */
 
-.hero-overlay {
-    position: absolute;
 
-    inset: 0;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(3, 27, 60, 0.96) 0%,
-            rgba(3, 31, 69, 0.85) 35%,
-            rgba(3, 31, 69, 0.35) 70%,
-            rgba(3, 31, 69, 0.15) 100%
-        );
-
-    z-index: 1;
-
-    pointer-events: none;
-}
 
 
 /* ========================================
