@@ -812,6 +812,714 @@ a {
 
 
 /* ========================================
+   COMO FUNCIONA
+======================================== */
+
+.how-it-works {
+
+    position: relative;
+
+    padding: 120px 60px 120px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(47, 86, 216, 0.12),
+            transparent 45%
+        ),
+        #071421;
+
+    overflow: hidden;
+
+}
+
+
+/* ========================================
+   ELEMENTOS DECORATIVOS
+======================================== */
+
+.how-it-works::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -280px;
+    left: -220px;
+
+    border: 1px solid rgba(47, 86, 216, 0.08);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+.how-it-works::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    right: -230px;
+    bottom: -280px;
+
+    border: 1px solid rgba(227, 93, 36, 0.07);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.how-container {
+
+    width: 100%;
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.how-header {
+
+    max-width: 760px;
+
+    margin: 0 auto 75px;
+
+    text-align: center;
+
+}
+
+
+.how-header .section-tag {
+
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: var(--orange);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.how-header h2 {
+
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 4vw, 56px);
+
+    line-height: 1.1;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+}
+
+
+.how-header h2 span {
+
+    color: var(--orange);
+
+}
+
+
+.how-header p {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: rgba(245, 247, 250, 0.68);
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ========================================
+   PROCESSO
+======================================== */
+
+.process {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        80px
+        minmax(0, 1fr)
+        80px
+        minmax(0, 1fr);
+
+    align-items: start;
+
+    width: 100%;
+
+}
+
+
+/* ========================================
+   ETAPA
+======================================== */
+
+.process-step {
+
+    position: relative;
+
+    text-align: center;
+
+    padding: 0 20px;
+
+}
+
+
+/* ========================================
+   NÚMERO
+======================================== */
+
+.process-number {
+
+    width: 68px;
+    height: 68px;
+
+    margin: 0 auto 24px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #102A48,
+            #071A2B
+        );
+
+    border: 1px solid rgba(47, 86, 216, 0.55);
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 0 0 8px rgba(7, 20, 33, 0.9),
+        0 0 30px rgba(47, 86, 216, 0.10);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+/* ========================================
+   CONTEÚDO DA ETAPA
+======================================== */
+
+.process-content {
+
+    min-height: 280px;
+
+    padding: 34px 28px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(31, 52, 91, 0.62),
+            rgba(10, 29, 52, 0.75)
+        );
+
+    border: 1px solid rgba(104, 137, 198, 0.16);
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease,
+        background 0.4s ease;
+
+}
+
+
+/* ========================================
+   ÍCONE
+======================================== */
+
+.process-icon {
+
+    width: 72px;
+    height: 72px;
+
+    margin-bottom: 24px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background:
+        rgba(47, 86, 216, 0.10);
+
+    border: 1px solid rgba(47, 86, 216, 0.20);
+
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+.process-icon svg {
+
+    width: 38px;
+    height: 38px;
+
+    fill: none;
+
+    stroke: #9BB6FF;
+
+    stroke-width: 1.6;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+    transition:
+        transform 0.4s ease,
+        stroke 0.4s ease;
+
+}
+
+
+/* ========================================
+   IDENTIFICADOR DA ETAPA
+======================================== */
+
+.process-label {
+
+    margin-bottom: 12px;
+
+    color: var(--orange);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.process-step h3 {
+
+    max-width: 290px;
+
+    margin: 0 0 16px;
+
+    color: #ffffff;
+
+    font-size: 21px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+}
+
+
+/* ========================================
+   DESCRIÇÃO
+======================================== */
+
+.process-step p {
+
+    max-width: 300px;
+
+    margin: 0;
+
+    color: rgba(245, 247, 250, 0.60);
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+}
+
+
+/* ========================================
+   LINHA DE CONEXÃO
+======================================== */
+
+.process-line {
+
+    position: relative;
+
+    height: 68px;
+
+    margin-top: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* linha */
+
+.process-line::before {
+
+    content: "";
+
+    width: 100%;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(47, 86, 216, 0.15),
+            rgba(47, 86, 216, 0.65),
+            rgba(47, 86, 216, 0.15)
+        );
+
+}
+
+
+/* ponto luminoso */
+
+.process-line span {
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #6D8DFF;
+
+    box-shadow:
+        0 0 12px rgba(47, 86, 216, 0.8);
+
+    animation: processPulse 2.5s ease-in-out infinite;
+
+}
+
+
+.process-line:nth-of-type(2) span {
+
+    animation-delay: 0.8s;
+
+}
+
+
+@keyframes processPulse {
+
+    0%,
+    100% {
+
+        opacity: 0.45;
+
+        transform: scale(0.8);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform: scale(1.3);
+
+    }
+
+}
+
+
+/* ========================================
+   HOVER DAS ETAPAS
+======================================== */
+
+.process-step:hover .process-content {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(47, 86, 216, 0.45);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(37, 62, 108, 0.78),
+            rgba(10, 29, 52, 0.88)
+        );
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.25),
+        0 0 25px rgba(47, 86, 216, 0.07);
+
+}
+
+
+.process-step:hover .process-number {
+
+    transform: translateY(-5px);
+
+    border-color: rgba(47, 86, 216, 0.9);
+
+    box-shadow:
+        0 0 0 8px rgba(7, 20, 33, 0.9),
+        0 0 30px rgba(47, 86, 216, 0.30);
+
+}
+
+
+.process-step:hover .process-icon {
+
+    transform: translateY(-4px);
+
+    background:
+        rgba(47, 86, 216, 0.17);
+
+    box-shadow:
+        0 0 25px rgba(47, 86, 216, 0.12);
+
+}
+
+
+.process-step:hover .process-icon svg {
+
+    stroke: #ffffff;
+
+    transform: scale(1.08);
+
+}
+
+
+/* ========================================
+   DESTAQUE FINAL
+======================================== */
+
+.process-highlight {
+
+    margin-top: 65px;
+
+    min-height: 90px;
+
+    padding: 18px 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(47, 86, 216, 0.12),
+            rgba(47, 86, 216, 0.04)
+        );
+
+    border: 1px solid rgba(47, 86, 216, 0.18);
+
+    border-radius: 16px;
+
+}
+
+
+/* ========================================
+   ÍCONE DO DESTAQUE
+======================================== */
+
+.highlight-icon {
+
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(47, 86, 216, 0.13);
+
+}
+
+
+.highlight-icon svg {
+
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: #8EA7FF;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+
+}
+
+
+/* ========================================
+   TEXTO DO DESTAQUE
+======================================== */
+
+.highlight-text {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.highlight-text strong {
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+}
+
+
+.highlight-text span {
+
+    color: rgba(245, 247, 250, 0.55);
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   BOTÃO DO DESTAQUE
+======================================== */
+
+.highlight-button {
+
+    min-width: 200px;
+
+    height: 48px;
+
+    padding: 0 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #E45E27,
+            #772B13
+        );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.highlight-button span {
+
+    font-size: 22px;
+
+    line-height: 1;
+
+}
+
+
+.highlight-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(227, 93, 36, 0.25);
+
+}
+
+/* ========================================
    TABLET / TELAS MÉDIAS
 ======================================== */
 
